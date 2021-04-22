@@ -3,7 +3,7 @@
 
 <head>
   <!-- Title -->
-  <title>Shop - Classic | Space - Responsive Website Template</title>
+  <title>{{ page.title }}</title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -50,25 +50,7 @@
   <main id="content">
   {{ content }}
 
-    <!-- CTA -->
-    <div class="gradient-half-primary-v1">
-      <div class="bg-img-hero" style="background-image: url(../../assets/img/bg/bg2.png);">
-        <div class="container">
-          <div class="row justify-content-lg-center align-items-md-center text-center text-md-left space-2">
-            <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-              <img class="img-fluid" src="../../assets/img/mockups/img7.png" alt="Image Descriptio">
-            </div>
-
-            <div class="col-md-6 col-lg-5">
-              <div class="pl-md-4">
-                <h2 class="h1 text-white mb-0">Get <strong>20% off</strong> your next purchase</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End CTA -->
+  {% include cta.html %}
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 

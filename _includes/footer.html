@@ -1,8 +1,20 @@
 <footer class="bg-dark">
     <div class="container space-2">
       <div class="row justify-content-md-between">
+        <div class="col-6 col-md-3 col-lg-2 order-lg-5 mb-7 mb-lg-0">
+          <h3 class="h6 text-white mb-3">Shop</h3>
+
+          <!-- List Group -->
+          <div class="list-group list-group-flush list-group-transparent"> 
+            <a class="list-group-item list-group-item-action" href="/air/">Air Purifiers</a>
+            <a class="list-group-item list-group-item-action" href="/waters/">Water Purifiers</a>
+            <a class="list-group-item list-group-item-action" href="/specials/">Specials</a>
+          </div>
+          <!-- End List Group -->
+        </div>
+
         <div class="col-6 col-md-3 col-lg-2 order-lg-3 mb-7 mb-lg-0">
-          <h3 class="h6 text-white mb-3">About</h3>
+          <h3 class="h6 text-white mb-3">Company</h3>
 
           <!-- List Group -->
           <div class="list-group list-group-flush list-group-transparent">
@@ -18,38 +30,18 @@
           </div>
           <!-- End List Group -->
         </div>
-
+        
         <div class="col-6 col-md-3 col-lg-2 order-lg-4 mb-7 mb-lg-0">
           <h3 class="h6 text-white mb-3">Water Purifiers</h3>
 
           <!-- List Group -->
           <div class="list-group list-group-flush list-group-transparent">
-           {% for water in site.water limit:3 %}
+           {% for water in site.water limit:4 %}
                 <a class="list-group-item list-group-item-action" href="{{ water.url | absolute_url }}">{{ water.title }}</a>
             {% endfor %}
             {% if site.water | size > 3 %}
                 <li><a href="{{ "/water/" | absolute_url }}">See all projects</a></li>
             {% endif %}
-          </div>
-          <!-- End List Group -->
-        </div>
-
-        <div class="col-6 col-md-3 col-lg-2 order-lg-5 mb-7 mb-lg-0">
-          <h3 class="h6 text-white mb-3">Air Purifiers</h3>
-
-          <!-- List Group -->
-          <div class="list-group list-group-flush list-group-transparent">
-          {% for air in site.air limit:3 %}
-                <a class="list-group-item list-group-item-action" href="{{ air.url | absolute_url }}">{{ air.title }}</a>
-            {% endfor %}
-            {% if site.air | size > 3 %}
-                <li><a href="{{ "/air/" | absolute_url }}">See all projects</a></li>
-            {% endif %}
-          {% comment %}  
-            <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/shop/classic.html">Classic</a>
-            <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/shop/single-product.html">Single Product</a>
-            <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/shop/checkout.html">Checkout</a>
-            {% endcomment %}
           </div>
           <!-- End List Group -->
         </div>
@@ -83,8 +75,8 @@
 
         <div class="col-lg-4 order-lg-1 d-flex align-items-start flex-column">
           <!-- Logo -->
-          <a class="d-inline-block mb-5" href="index.html" aria-label="Space">
-            <img src="https://htmlstream.com/preview/space-v1.6.1/assets/svg/logos/logo-short-white.svg" alt="Logo" style="width: 40px; max-width: 100%;">
+          <a class="d-inline-block mb-5" href="/" aria-label="Space">
+            <img src="../../assets/img/logo-nav.png" alt="Logo" style="width: 150px; max-width: 100%;">
           </a>
           <!-- End Logo -->
 

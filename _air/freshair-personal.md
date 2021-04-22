@@ -1,5 +1,6 @@
 ---
 title: FreshAir Personal
+layout: product
 date: 2016-04-20 00:00:00 +0000
 categories: []
 description: A portable device for epileptic patients.

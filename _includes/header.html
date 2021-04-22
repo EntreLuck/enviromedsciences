@@ -1,13 +1,15 @@
-<header id="header" class="u-header u-header--modern u-header--bordered u-header--sticky-top-lg">
+ <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header u-header--modern u-header--bg-transparent u-header--white-nav-links u-header--sticky-top-lg">
     <div class="u-header__section">
-      <div id="logoAndNav" class="container-fluid">
+      <div id="logoAndNav" class="container">
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-lg u-header__navbar">
           <!-- Logo -->
           <div class="u-header__navbar-brand-wrapper">
-            <a class="navbar-brand u-header__navbar-brand" href="index.html" aria-label="Space">
-              <img class="u-header__navbar-brand-default" src="https://htmlstream.com/preview/space-v1.6.1/assets/svg/logos/logo.svg" alt="Logo">
-              <img class="u-header__navbar-brand-mobile" src="https://htmlstream.com/preview/space-v1.6.1/assets/svg/logos/logo-short.svg" alt="Logo">
+            <a class="navbar-brand u-header__navbar-brand" href="/" aria-label="Space">
+              <img class="u-header__navbar-brand-default" src="/assets/img/logo-nav.png" width="175px" alt="Logo">
+              <img class="u-header__navbar-brand-on-scroll" src="/assets/img/logo-nav.png" width="150px" alt="Logo">
+              <img class="u-header__navbar-brand-mobile" src="/assets/img/logo-nav.png" width="150px" alt="Logo">
             </a>
           </div>
           <!-- End Logo -->
@@ -34,39 +36,80 @@
                   data-event="hover"
                   data-animation-in="fadeInUp"
                   data-animation-out="fadeOut">
-                <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="/"
-                   aria-haspopup="true"
-                   aria-expanded="false"
-                   aria-labelledby="homeSubMenu">
+                <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="/">
                   Home
                 </a>
               </li>
               <!-- End Home -->
 
               <!-- Air -->
-              <li class="nav-item hs-has-mega-menu u-header__nav-item"
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="fadeInUp"
-                  data-animation-out="fadeOut"
-                  data-position="right">
-                <a id="PagesMegaMenu" class="nav-link u-header__nav-link" href="/air/"
+                  data-animation-out="fadeOut">
+                <a id="shopMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
                    aria-haspopup="true"
-                   aria-expanded="false">
+                   aria-expanded="false"
+                   aria-labelledby="shopSubMenu">
                   Air
+                  <i class="fa fa-angle-down u-header__nav-link-icon"></i>
                 </a>
+
+                <!-- Shop - Submenu -->
+                <ul id="shopSubMenu" class="list-inline hs-sub-menu u-header__sub-menu mb-0" style="min-width: 220px;"
+                    aria-labelledby="shopMegaMenu">
+                {% for air in site.air limit:4 %}
+                 <li class="dropdown-item u-header__sub-menu-list-item py-0">
+                  <a class="nav-link u-header__sub-menu-nav-link" href="{{ air.url | absolute_url }}">{{ air.title }}</a>
+                 </li>
+                {% endfor %}
+                </ul>
               </li>
-              <!-- End Pages -->
+              <!-- End Air -->
 
               <!-- Water -->
               <li class="nav-item hs-has-sub-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="fadeInUp"
                   data-animation-out="fadeOut">
-                <a id="worksMegaMenu" class="nav-link u-header__nav-link" href="/water/"
+                <a id="shopMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
                    aria-haspopup="true"
                    aria-expanded="false"
-                   aria-labelledby="worksSubMenu">
+                   aria-labelledby="shopSubMenu">
                   Water
+                  <i class="fa fa-angle-down u-header__nav-link-icon"></i>
+                </a>
+
+                <!-- Shop - Submenu -->
+                <ul id="shopSubMenu" class="list-inline hs-sub-menu u-header__sub-menu mb-0" style="min-width: 220px;"
+                    aria-labelledby="shopMegaMenu">
+                {% for water in site.water %}
+                 <li class="dropdown-item u-header__sub-menu-list-item py-0">
+                  <a class="nav-link u-header__sub-menu-nav-link" href="{{ water.url | absolute_url }}">{{ water.title }}</a>
+                 </li>
+                {% endfor %}
+                </ul>
+              </li>
+              <!-- End Water -->
+              
+              {% comment %} <!-- Blog -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="fadeInUp"
+                  data-animation-out="fadeOut">
+                <a id="blogMegaMenu" class="nav-link u-header__nav-link" href="/blog/">
+                  Blog
+                </a>
+              </li>
+              <!-- End Blog --> {% endcomment %}
+
+              <!-- Water -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="fadeInUp"
+                  data-animation-out="fadeOut">
+                <a id="shopMegaMenu" class="nav-link u-header__nav-link" href="/shop/">
+                  Shop
                 </a>
               </li>
               <!-- End Water -->
@@ -76,66 +119,29 @@
                   data-event="hover"
                   data-animation-in="fadeInUp"
                   data-animation-out="fadeOut">
-                <a id="blogMegaMenu" class="nav-link u-header__nav-link" href="/events/"
-                   aria-haspopup="true"
-                   aria-expanded="false"
-                   aria-labelledby="blogSubMenu">
+                <a id="docsMegaMenu" class="nav-link u-header__nav-link" href="/events/">
                   Events
                 </a>
               </li>
               <!-- End Events -->
-
-              <!-- Blog -->
-              <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                  data-event="hover"
-                  data-animation-in="fadeInUp"
-                  data-animation-out="fadeOut">
-                <a id="blogMegaMenu" class="nav-link u-header__nav-link" href="/blog/"
-                   aria-haspopup="true"
-                   aria-expanded="false"
-                   aria-labelledby="blogSubMenu">
-                  Blog
-                </a>
-              </li>
-              <!-- End Blog -->
 
               <!-- About -->
               <li class="nav-item hs-has-sub-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="fadeInUp"
                   data-animation-out="fadeOut">
-                <a id="blogMegaMenu" class="nav-link u-header__nav-link" href="/about/"
-                   aria-haspopup="true"
-                   aria-expanded="false"
-                   aria-labelledby="blogSubMenu">
+                <a id="docsMegaMenu" class="nav-link u-header__nav-link" href="/about/">
                   About
                 </a>
               </li>
               <!-- End About -->
-
-              <!-- Shop -->
-              <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                  data-event="hover"
-                  data-animation-in="fadeInUp"
-                  data-animation-out="fadeOut">
-                <a id="shopMegaMenu" class="nav-link u-header__nav-link" href="/shop/"
-                   aria-haspopup="true"
-                   aria-expanded="false"
-                   aria-labelledby="shopSubMenu">
-                  Shop
-                </a>
-              </li>
-              <!-- End Shop -->
 
               <!-- Contact -->
               <li class="nav-item hs-has-sub-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="fadeInUp"
                   data-animation-out="fadeOut">
-                <a id="docsMegaMenu" class="nav-link u-header__nav-link" href="/contact/"
-                   aria-haspopup="true"
-                   aria-expanded="false"
-                   aria-labelledby="docsSubMenu">
+                <a id="docsMegaMenu" class="nav-link u-header__nav-link" href="/contact/">
                   Contact
                 </a>
               </li>
@@ -143,99 +149,18 @@
 
               <!-- Button -->
               <li class="nav-item u-header__nav-item-btn">
-                <a class="btn btn-sm btn-primary" href="/specials/" role="button"
-                   data-modal-target="#signupModal"
+                <a class="btn btn-sm btn-primary" href="/special/" role="button"
                    data-overlay-color="#151b26">
-                  Specials
+                  Special
                 </a>
               </li>
               <!-- End Button -->
-              
-              {% comment %}  
-              <!-- Search -->
-              <li class="nav-item u-header__navbar-icon u-header__navbar-v-divider">
-                <a class="btn btn-xs btn-icon btn-text-dark u-header__search-toggle" href="javascript:;" role="button"
-                   aria-haspopup="true"
-                   aria-expanded="false"
-                   aria-controls="search"
-                   data-unfold-target="#search"
-                   data-unfold-hide-on-scroll="false"
-                   data-unfold-type="css-animation"
-                   data-unfold-duration="300"
-                   data-unfold-delay="300"
-                   data-unfold-animation-in="slideInUp">
-                  <i class="fa fa-search btn-icon__inner"></i>
-                </a>
-
-                <!-- Input -->
-                <form id="search" class="js-focus-state input-group form u-header__search u-unfold--css-animation u-unfold--hidden">
-                  <input class="form-control form__input" type="search" placeholder="Search Space">
-                  <div class="input-group-addon u-header__search-addon p-0">
-                    <button class="btn btn-primary u-header__search-addon-btn" type="button">
-                      <i class="fa fa-search"></i>
-                    </button>
-                  </div>
-                </form>
-                <!-- End Input -->
-              </li>
-              <!-- End Search -->
-              {% endcomment %}
             </ul>
           </div>
           <!-- End Navigation -->
-
-          {% comment %}  
-          <ul class="navbar-nav flex-row u-header__secondary-nav">
-            <!-- Shopping Cart -->
-            <li class="nav-item u-header__navbar-icon-wrapper u-header__navbar-icon">
-              <a id="shoppingCartDropdownInvoker" class="btn btn-xs btn-icon btn-text-dark" href="javascript:;" role="button"
-                      aria-controls="shoppingCartDropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      data-unfold-event="click"
-                      data-unfold-target="#shoppingCartDropdown"
-                      data-unfold-type="css-animation"
-                      data-unfold-duration="300"
-                      data-unfold-delay="300"
-                      data-unfold-hide-on-scroll="true"
-                      data-unfold-animation-in="slideInUp"
-                      data-unfold-animation-out="fadeOut">
-                <i class="fa fa-shopping-cart btn-icon__inner"></i>
-              </a>
-
-              <!--  -->
-              <div id="shoppingCartDropdown" class="u-unfold u-unfold--cart text-center border rounded-0 right-0 p-7" aria-labelledby="shoppingCartDropdownInvoker" style="min-width: 250px;">
-                <span class="u-icon u-icon--primary u-icon--md rounded-circle mb-3">
-                  <i class="fa fa-shopping-basket u-icon__inner"></i>
-                </span>
-                <span class="d-block">Your Cart is Empty</span>
-              </div>
-            </li>
-            <!-- End Shopping Cart -->
-
-            <!-- Account Signin -->
-            <li class="nav-item u-header__navbar-icon">
-              <!-- Account Sidebar Toggle Button -->
-              <a id="sidebarNavToggler" class="btn btn-xs btn-icon btn-text-dark" href="javascript:;" role="button"
-                 aria-controls="sidebarContent"
-                 aria-haspopup="true"
-                 aria-expanded="false"
-                 data-unfold-event="click"
-                 data-unfold-hide-on-scroll="false"
-                 data-unfold-target="#sidebarContent"
-                 data-unfold-type="css-animation"
-                 data-unfold-animation-in="fadeInRight"
-                 data-unfold-animation-out="fadeOutRight"
-                 data-unfold-duration="500">
-                <i class="fa fa-bars btn-icon__inner font-size-13"></i>
-              </a>
-              <!-- End Account Sidebar Toggle Button -->
-            </li>
-            <!-- End Account Signin -->
-          </ul>
-          {% endcomment %}
         </nav>
         <!-- End Nav -->
       </div>
     </div>
   </header>
+  <!-- ========== END HEADER ========== -->
