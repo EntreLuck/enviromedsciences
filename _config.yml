@@ -1,7 +1,8 @@
-title: Belkirk College of Engineering
-short_title: Belkirk
-description: Jekyll demo for Forestry CMS
+title: EnviroMed Sciences
+short_title: EnviroMed
+description: 
 baseurl:
+incremental: true
 permalink: "/:path/"
 defaults:
   - scope:
@@ -22,6 +23,12 @@ collections:
   projects:
     output: true
     permalink: "/projects/:path/"
+  air:
+    output: true
+    permalink: "/air/:path"
+  water:
+    output: true
+    permalink: "/water/:path"
 # tag_page_layout: tag_page
 # tag_page_dir: tag
 jekyll-archives:

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Title -->
+  <title>{{ page.title }} | EnviroMed Sciences</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="#">
+
+  <!-- Google Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../assets/vendor/custombox/dist/custombox.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/slick-carousel/slick/slick.css">
+
+  <!-- CSS Space Template -->
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+</head>
+
+<body>
+  <!-- Skippy -->
+  <a id="skippy" class="sr-only sr-only-focusable u-skippy" href="#content">
+    <div class="container">
+      <span class="u-skiplink-text">Skip to main content</span>
+    </div>
+  </a>
+  <!-- End Skippy -->
+
+  <!-- ========== HEADER ========== -->
+  {% include header.html %}
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content">
+    <!-- Product Description Section -->
+    <div class="container space-2 space-3--lg">
+      <div class="row">
+        <div class="col-lg-7 mb-7 mb-lg-0">
+          <!-- Red Product Gallery -->
+          <div id="redShoeProduct" data-target-group="idProductSwitcher">
+            <div class="row align-items-center">
+              <div class="col-2">
+                <!-- Slick Carousel - Thumbnail Shop Product -->
+                {% comment %}  
+                <div id="redShoeNavThumb" class="js-slick-carousel u-slick u-slick--transform-off-lg u-slick--pagination-active-border"
+                     data-infinite="true"
+                     data-center-mode="true"
+                     data-slides-show="4"
+                     data-is-thumbs="true"
+                     data-vertical="true"
+                     data-focus-on-select="true"
+                     data-nav-for="#redShoeNavMain">
+                  <div class="js-slide my-2">
+                    <img class="img-fluid u-slick--pagination-active-border__item" src="../../assets/img/100x100/img5.jpg" alt="Image Description">
+                  </div>
+                  <div class="js-slide my-2">
+                    <img class="img-fluid u-slick--pagination-active-border__item" src="../../assets/img/100x100/img6.jpg" alt="Image Description">
+                  </div>
+                  <div class="js-slide my-2">
+                    <img class="img-fluid u-slick--pagination-active-border__item" src="../../assets/img/100x100/img7.jpg" alt="Image Description">
+                  </div>
+                  <div class="js-slide my-2">
+                    <img class="img-fluid u-slick--pagination-active-border__item" src="../../assets/img/100x100/img8.jpg" alt="Image Description">
+                  </div>
+                </div>
+                {% endcomment %}
+                <!-- End Slick Carousel - Thumbnail Shop Product -->
+              </div>
+
+              <div class="col-10">
+                <!-- Slick Carousel - Main Shop Product -->
+                <div id="redShoeNavMain" class="js-slick-carousel u-slick"
+                     data-infinite="true"
+                     data-nav-for="#redShoeNavThumb">
+                  <div class="js-slide">
+                    <img class="img-fluid" src="../../assets/img/700x400/img1.jpg" alt="Image Description">
+                  </div>
+                </div>
+                <!-- End Slick Carousel - Main Shop Product -->
+              </div>
+            </div>
+          </div>
+          <!-- End Red Product Gallery -->
+
+          <!-- Black Product Gallery -->
+          <div id="blackShoeProduct" style="display: none; opacity: 0;" data-target-group="idProductSwitcher">
+            <div class="row align-items-center">
+              <div class="col-2">
+                <!-- Slick Carousel - Thumbnail Shop Product -->
+                <div id="blackShoeNavThumb" class="js-slick-carousel u-slick u-slick--transform-off-lg u-slick--pagination-active-border"
+                     data-infinite="true"
+                     data-center-mode="true"
+                     data-slides-show="4"
+                     data-is-thumbs="true"
+                     data-vertical="true"
+                     data-focus-on-select="true"
+                     data-nav-for="#blackShoeNavMain">
+                  <div class="js-slide my-2">
+                    <img class="img-fluid u-slick--pagination-active-border__item" src="../../assets/img/100x100/img9.jpg" alt="Image Description">
+                  </div>
+                  <div class="js-slide my-2">
+                    <img class="img-fluid u-slick--pagination-active-border__item" src="../../assets/img/100x100/img10.jpg" alt="Image Description">
+                  </div>
+                  <div class="js-slide my-2">
+                    <img class="img-fluid u-slick--pagination-active-border__item" src="../../assets/img/100x100/img11.jpg" alt="Image Description">
+                  </div>
+                  <div class="js-slide my-2">
+                    <img class="img-fluid u-slick--pagination-active-border__item" src="../../assets/img/100x100/img12.jpg" alt="Image Description">
+                  </div>
+                </div>
+                <!-- End Slick Carousel - Thumbnail Shop Product -->
+              </div>
+
+              <div class="col-10">
+                <!-- Slick Carousel - Main Shop Product -->
+                <div id="blackShoeNavMain" class="js-slick-carousel u-slick"
+                     data-infinite="true"
+                     data-nav-for="#blackShoeNavThumb">
+                  <div class="js-slide">
+                    <img class="img-fluid" src="../../assets/img/700x400/img5.jpg" alt="Image Description">
+                  </div>
+                  <div class="js-slide">
+                    <img class="img-fluid" src="../../assets/img/700x400/img6.jpg" alt="Image Description">
+                  </div>
+                  <div class="js-slide">
+                    <img class="img-fluid" src="../../assets/img/700x400/img7.jpg" alt="Image Description">
+                  </div>
+                  <div class="js-slide">
+                    <img class="img-fluid" src="../../assets/img/700x400/img8.jpg" alt="Image Description">
+                  </div>
+                </div>
+                <!-- End Slick Carousel - Main Shop Product -->
+              </div>
+            </div>
+          </div>
+          <!-- End Black Product Gallery -->
+        </div>
+
+        <div class="col-lg-5">
+          <!-- Content -->
+          <div class="mb-5">
+            <h1 class="font-weight-normal">{{ page.title }}</h1>
+            <span class="d-block h3 mb-3">$99</span>
+            <p>Our Space Design Makeup collection – to create your coolest look, then switch it up again tomorrow.</p>
+          </div>
+
+          <hr class="my-4">
+
+          <a class="btn btn-block btn-primary" href="#">Add to Cart</a>
+          <!-- End Content -->
+        </div>
+      </div>
+    </div>
+    <!-- End Product Description Section -->
+
+    <hr class="my-0">
+
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  {% include footer.html %}
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to u-go-to" href="javascript:;"
+    data-position='{"bottom": 15, "right": 15 }'
+    data-type="fixed"
+    data-offset-top="400"
+    data-compensation="#header"
+    data-show-effect="slideInUp"
+    data-hide-effect="slideOutDown">
+    <i class="fa fa-arrow-up u-go-to__inner"></i>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../../assets/vendor/custombox/dist/custombox.min.js"></script>
+  <script src="../../assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
+  <script src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
+
+  <!-- JS Space -->
+  <script src="../../assets/js/hs.core.js"></script>
+  <script src="../../assets/js/components/hs.header.js"></script>
+  <script src="../../assets/js/components/hs.unfold.js"></script>
+  <script src="../../assets/js/components/hs.validation.js"></script>
+  <script src="../../assets/js/helpers/hs.focus-state.js"></script>
+  <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="../../assets/js/components/hs.modal-window.js"></script>
+  <script src="../../assets/js/components/hs.show-animation.js"></script>
+  <script src="../../assets/js/components/hs.slick-carousel.js"></script>
+  <script src="../../assets/js/components/hs.go-to.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991,
+        hideTimeOut: 0
+      });
+    });
+
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+        afterOpen: function () {
+          if (!$('body').hasClass('IE11')) {
+            $(this).find('input[type="search"]').focus();
+          }
+        }
+      });
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate', {
+        rules: {
+          confirmPassword: {
+            equalTo: '#password'
+          }
+        }
+      });
+
+      // initialization of forms
+      $.HSCore.helpers.HSFocusState.init();
+
+      // initialization of malihu scrollbar
+      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+      // initialization of autonomous popups
+      $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-signup-modal', '.js-shopping-cart-size', {
+        autonomous: true
+      });
+
+      // initialization of show animations
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link', {
+        afterShow: function() {
+          $('.js-slick-carousel').slick('setPosition');
+          $('#redShoeNavThumb').slick('setPosition');
+          $('#blackShoeNavThumb').slick('setPosition');
+        }
+      });
+
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+  </script>
+</body>
+
+</html>
