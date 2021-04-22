@@ -25,5 +25,8 @@ hero_button:
   text: Learn more
   href: "/about"
 show_news: true
+menu:
+  navigation:
+    weight: 1
 
 ---
