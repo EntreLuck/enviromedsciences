@@ -12,31 +12,39 @@
             <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/pages/services-agency.html">Services Agency</a>
             <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/pages/services-start-up.html">Services Start-Up</a>
             {% endcomment %}
+            {% for item in site.menus.footer %}
+                <a class="list-group-item list-group-item-action" href="{{ item.url | absolute_url }}">{{ item.title }}</a>
+            {% endfor %}
           </div>
           <!-- End List Group -->
         </div>
 
         <div class="col-6 col-md-3 col-lg-2 order-lg-4 mb-7 mb-lg-0">
-          <h3 class="h6 text-white mb-3">Company</h3>
+          <h3 class="h6 text-white mb-3">Water Purifiers</h3>
 
           <!-- List Group -->
           <div class="list-group list-group-flush list-group-transparent">
-          {% comment %}  
-            <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/pages/contacts-agency.html">Contact Us</a>
-            <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/pages/help.html">Help</a>
-            <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/pages/careers.html">Careers</a>
-            <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/pages/terms.html">Terms &amp; Conditions</a>
-            <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/pages/privacy.html">Privacy &amp; Policy</a>
-            {% endcomment %}
+           {% for water in site.water limit:5 %}
+                <a class="list-group-item list-group-item-action" href="{{ water.url | absolute_url }}">{{ water.title }}</a>
+            {% endfor %}
+            {% if site.water | size > 7 %}
+                <li><a href="{{ "/water/" | absolute_url }}">See all projects</a></li>
+            {% endif %}
           </div>
           <!-- End List Group -->
         </div>
 
         <div class="col-6 col-md-3 col-lg-2 order-lg-5 mb-7 mb-lg-0">
-          <h3 class="h6 text-white mb-3">Shop</h3>
+          <h3 class="h6 text-white mb-3">Air Purifiers</h3>
 
           <!-- List Group -->
           <div class="list-group list-group-flush list-group-transparent">
+          {% for air in site.air limit:5 %}
+                <a class="list-group-item list-group-item-action" href="{{ air.url | absolute_url }}">{{ air.title }}</a>
+            {% endfor %}
+            {% if site.air | size > 7 %}
+                <li><a href="{{ "/air/" | absolute_url }}">See all projects</a></li>
+            {% endif %}
           {% comment %}  
             <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/shop/classic.html">Classic</a>
             <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/shop/single-product.html">Single Product</a>

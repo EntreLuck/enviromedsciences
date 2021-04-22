@@ -1,5 +1,5 @@
 ---
-title: H2Fuel | Water Purifier
+title: H2Fuel
 date: 2016-04-20 00:00:00 +0000
 categories: []
 description: A portable device for epileptic patients.

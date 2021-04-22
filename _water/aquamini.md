@@ -1,5 +1,5 @@
 ---
-title: AquaMini | Water Purifier
+title: AquaMini
 layout: product
 date: 2016-04-20 00:00:00 +0000
 categories: []
