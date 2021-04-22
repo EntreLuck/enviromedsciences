@@ -1,5 +1,6 @@
 ---
 title: Aquaperform
+layout: product
 date: 2016-04-20 00:00:00 +0000
 categories: []
 description: A portable device for epileptic patients.
@@ -7,7 +8,6 @@ banner_image: "/uploads/2018/02/17/neurons.jpg"
 sub_heading: A post-modern taking on Engineering in the Digital World
 tags:
 - water
-slug: ''
 ---
 
 ## Overview

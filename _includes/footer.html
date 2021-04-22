@@ -24,10 +24,10 @@
 
           <!-- List Group -->
           <div class="list-group list-group-flush list-group-transparent">
-           {% for water in site.water limit:5 %}
+           {% for water in site.water limit:3 %}
                 <a class="list-group-item list-group-item-action" href="{{ water.url | absolute_url }}">{{ water.title }}</a>
             {% endfor %}
-            {% if site.water | size > 7 %}
+            {% if site.water | size > 3 %}
                 <li><a href="{{ "/water/" | absolute_url }}">See all projects</a></li>
             {% endif %}
           </div>
@@ -39,10 +39,10 @@
 
           <!-- List Group -->
           <div class="list-group list-group-flush list-group-transparent">
-          {% for air in site.air limit:5 %}
+          {% for air in site.air limit:3 %}
                 <a class="list-group-item list-group-item-action" href="{{ air.url | absolute_url }}">{{ air.title }}</a>
             {% endfor %}
-            {% if site.air | size > 7 %}
+            {% if site.air | size > 3 %}
                 <li><a href="{{ "/air/" | absolute_url }}">See all projects</a></li>
             {% endif %}
           {% comment %}  
