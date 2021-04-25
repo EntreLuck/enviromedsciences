@@ -1,48 +1,43 @@
-<footer class="bg-dark">
+<!-- ========== FOOTER ========== -->
+  <footer class="bg-dark">
     <div class="container space-2">
       <div class="row justify-content-md-between">
+        <div class="col-6 col-md-3 col-lg-2 order-lg-3 mb-7 mb-lg-0">
+          <h3 class="h6 text-white mb-3">About</h3>
+
+          <!-- List Group -->
+          {% comment %} <div class="list-group list-group-flush list-group-transparent">
+            <a class="list-group-item list-group-item-action" href="about-agency.html">About Agency</a>
+            <a class="list-group-item list-group-item-action" href="about-start-up.html">About Start-Up</a>
+            <a class="list-group-item list-group-item-action" href="services-agency.html">Services Agency</a>
+            <a class="list-group-item list-group-item-action" href="services-start-up.html">Services Start-Up</a>
+          </div> {% endcomment %}
+          <!-- End List Group -->
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 order-lg-4 mb-7 mb-lg-0">
+          <h3 class="h6 text-white mb-3">Company</h3>
+
+          <!-- List Group -->
+          {% comment %} <div class="list-group list-group-flush list-group-transparent">
+            <a class="list-group-item list-group-item-action" href="contacts-agency.html">Contact Us</a>
+            <a class="list-group-item list-group-item-action" href="help.html">Help</a>
+            <a class="list-group-item list-group-item-action" href="careers.html">Careers</a>
+            <a class="list-group-item list-group-item-action" href="terms.html">Terms &amp; Conditions</a>
+            <a class="list-group-item list-group-item-action" href="privacy.html">Privacy &amp; Policy</a>
+          </div> {% endcomment %}
+          <!-- End List Group -->
+        </div>
+
         <div class="col-6 col-md-3 col-lg-2 order-lg-5 mb-7 mb-lg-0">
           <h3 class="h6 text-white mb-3">Shop</h3>
 
           <!-- List Group -->
-          <div class="list-group list-group-flush list-group-transparent"> 
-            <a class="list-group-item list-group-item-action" href="/air/">Air Purifiers</a>
-            <a class="list-group-item list-group-item-action" href="/waters/">Water Purifiers</a>
-            <a class="list-group-item list-group-item-action" href="/specials/">Specials</a>
-          </div>
-          <!-- End List Group -->
-        </div>
-
-        <div class="col-6 col-md-3 col-lg-2 order-lg-3 mb-7 mb-lg-0">
-          <h3 class="h6 text-white mb-3">Company</h3>
-
-          <!-- List Group -->
-          <div class="list-group list-group-flush list-group-transparent">
-          {% comment %}  
-            <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/pages/about-agency.html">About Agency</a>
-            <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/pages/about-start-up.html">About Start-Up</a>
-            <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/pages/services-agency.html">Services Agency</a>
-            <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/pages/services-start-up.html">Services Start-Up</a>
-            {% endcomment %}
-            {% for item in site.menus.footer %}
-                <a class="list-group-item list-group-item-action" href="{{ item.url | absolute_url }}">{{ item.title }}</a>
-            {% endfor %}
-          </div>
-          <!-- End List Group -->
-        </div>
-        
-        <div class="col-6 col-md-3 col-lg-2 order-lg-4 mb-7 mb-lg-0">
-          <h3 class="h6 text-white mb-3">Water Purifiers</h3>
-
-          <!-- List Group -->
-          <div class="list-group list-group-flush list-group-transparent">
-           {% for water in site.water limit:4 %}
-                <a class="list-group-item list-group-item-action" href="{{ water.url | absolute_url }}">{{ water.title }}</a>
-            {% endfor %}
-            {% if site.water | size > 3 %}
-                <li><a href="{{ "/water/" | absolute_url }}">See all projects</a></li>
-            {% endif %}
-          </div>
+          {% comment %} <div class="list-group list-group-flush list-group-transparent">
+            <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/shop/classic.html">Classic</a>
+            <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/shop/single-product.html">Single Product</a>
+            <a class="list-group-item list-group-item-action" href="https://htmlstream.com/preview/space-v1.6.1/html/shop/checkout.html">Checkout</a>
+          </div> {% endcomment %}
           <!-- End List Group -->
         </div>
 
@@ -50,12 +45,11 @@
           <h3 class="h6 text-white mb-3">Social</h3>
 
           <!-- List -->
-          <div class="list-group list-group-flush list-group-transparent">
+          {% comment %} <div class="list-group list-group-flush list-group-transparent">
             <a class="list-group-item list-group-item-action" href="#">
               <i class="fab fa-facebook-f min-width-3 text-center mr-2"></i>
               Facebook
             </a>
-            {% comment %}  
             <a class="list-group-item list-group-item-action" href="#">
               <i class="fab fa-twitter min-width-3 text-center mr-2"></i>
               Twitter
@@ -68,21 +62,19 @@
               <i class="fab fa-github min-width-3 text-center mr-2"></i>
               GitHub
             </a>
-            {% endcomment %}
-          </div>
+          </div> {% endcomment %}
           <!-- End List -->
         </div>
 
         <div class="col-lg-4 order-lg-1 d-flex align-items-start flex-column">
           <!-- Logo -->
-          <a class="d-inline-block mb-5" href="/" aria-label="Space">
+          <a class="d-inline-block mb-5" href="index.html" aria-label="Space">
             <img src="../../assets/img/logo-nav.png" alt="Logo" style="width: 150px; max-width: 100%;">
           </a>
           <!-- End Logo -->
 
-          {% comment %}  
           <!-- Language -->
-          <div class="btn-group d-block position-relative mb-4 mb-lg-auto">
+          {% comment %} <div class="btn-group d-block position-relative mb-4 mb-lg-auto">
             <a id="footerLanguageInvoker" class="btn-text-secondary d-flex align-items-center u-unfold--language-btn rounded py-2 px-3" href="javascript:;" role="button"
                aria-controls="footerLanguage"
                aria-haspopup="true"
@@ -154,19 +146,19 @@
               </div>
 
               <!-- Signup -->
-              <a class="u-unfold--language__link p-5" href="https://htmlstream.com/preview/space-v1.6.1/html/pages/signup-simple.html">
+              <a class="u-unfold--language__link p-5" href="signup-simple.html">
                 <small class="d-block text-muted mb-1">More languages coming soon.</small>
                 <small class="d-block">Signup to get notified <i class="fa fa-arrow-right u-unfold__icon-pointer"></i></small>
               </a>
               <!-- End Signup -->
             </div>
             <!-- End Content -->
-          </div>
+          </div> {% endcomment %}
           <!-- End Language -->
-          {% endcomment %}
 
-          <p class="small text-muted">&copy;{{ 'now' | date: "%Y" }} {{ site.title }}</p>
+          <p class="small text-muted">&copy;2010 GermFreeMD, LLC</p>
         </div>
       </div>
     </div>
   </footer>
+  <!-- ========== END FOOTER ========== -->
